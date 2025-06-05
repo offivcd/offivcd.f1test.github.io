@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teams - F1 Homage</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+      justify-content: space-between;
+    }
+    .team-card {
+      background-color: #1a1a1a;
+      border: 2px solid #444;
+      border-radius: 1rem;
+      padding: 1rem;
+      flex: 1 1 45%;
+      color: white;
+    }
+    .team-card h2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.5rem;
+    }
+    .drivers {
+      display: flex;
+      gap: 2rem;
+      margin: 1rem 0;
+    }
+    .drivers div {
+      text-align: center;
+    }
+    .drivers img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    .car-image {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+    .team-rank {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .points {
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+      padding: 0.25rem 0.75rem;
+      border-radius: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Teams</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timings.html">Timings</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="drivers.html">Drivers</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="videos.html">Videos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="team-grid">
+      <div class="team-card">
+        <h2><span class="team-rank">1</span> McLaren <span class="points">362 PTS</span></h2>
+        <div class="drivers">
+          <div><img src="assets/piastri.jpg" alt="Oscar Piastri"><br>Oscar <b>PIASTRI</b></div>
+          <div><img src="assets/norris.jpg" alt="Lando Norris"><br>Lando <b>NORRIS</b></div>
+        </div>
+        <img src="assets/mclaren_car.png" alt="McLaren Car" class="car-image" />
+      </div>
+
+      <div class="team-card">
+        <h2><span class="team-rank">2</span> Ferrari <span class="points">165 PTS</span></h2>
+        <div class="drivers">
+          <div><img src="assets/leclerc.jpg" alt="Charles Leclerc"><br>Charles <b>LECLERC</b></div>
+          <div><img src="assets/hamilton.jpg" alt="Lewis Hamilton"><br>Lewis <b>HAMILTON</b></div>
+        </div>
+        <img src="assets/ferrari_car.png" alt="Ferrari Car" class="car-image" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 F1 Homage. All content is fictional.</p>
+  </footer>
+</body>
+</html>
